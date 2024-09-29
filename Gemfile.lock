@@ -170,28 +170,28 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
-    rexml (3.3.7)
+    rexml (3.3.8)
     rouge (4.4.0)
     safe_yaml (1.0.5)
-    sass-embedded (1.79.3-aarch64-linux-gnu)
+    sass-embedded (1.79.4-aarch64-linux-gnu)
       google-protobuf (~> 4.27)
-    sass-embedded (1.79.3-aarch64-linux-musl)
+    sass-embedded (1.79.4-aarch64-linux-musl)
       google-protobuf (~> 4.27)
-    sass-embedded (1.79.3-arm-linux-gnueabihf)
+    sass-embedded (1.79.4-arm-linux-gnueabihf)
       google-protobuf (~> 4.27)
-    sass-embedded (1.79.3-arm-linux-musleabihf)
+    sass-embedded (1.79.4-arm-linux-musleabihf)
       google-protobuf (~> 4.27)
-    sass-embedded (1.79.3-arm64-darwin)
+    sass-embedded (1.79.4-arm64-darwin)
       google-protobuf (~> 4.27)
-    sass-embedded (1.79.3-x86-linux-gnu)
+    sass-embedded (1.79.4-x86-linux-gnu)
       google-protobuf (~> 4.27)
-    sass-embedded (1.79.3-x86-linux-musl)
+    sass-embedded (1.79.4-x86-linux-musl)
       google-protobuf (~> 4.27)
-    sass-embedded (1.79.3-x86_64-darwin)
+    sass-embedded (1.79.4-x86_64-darwin)
       google-protobuf (~> 4.27)
-    sass-embedded (1.79.3-x86_64-linux-gnu)
+    sass-embedded (1.79.4-x86_64-linux-gnu)
       google-protobuf (~> 4.27)
-    sass-embedded (1.79.3-x86_64-linux-musl)
+    sass-embedded (1.79.4-x86_64-linux-musl)
       google-protobuf (~> 4.27)
     sawyer (0.9.2)
       addressable (>= 2.3.5)
@@ -242,6 +242,9 @@ DEPENDENCIES
   jemoji
   unicode_utils
   webrick
+
+RUBY VERSION
+   ruby 3.3.5p100
 
 BUNDLED WITH
    2.5.20
