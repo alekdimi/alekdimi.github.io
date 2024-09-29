@@ -9,8 +9,7 @@ last_name: Dimitriev
 email: dimitriev.aleksandar@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Alek Dimitriev's personal website.
-footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+footer_text: asda # >%Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 lang: en
 icon: 📖 # the emoji used as the favicon
 url: https://alekdimi.github.io # the base hostname & protocol for your site
