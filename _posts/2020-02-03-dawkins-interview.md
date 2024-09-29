@@ -5,6 +5,9 @@ date:   2020-02-03
 description: My interview with Richard Dawkins
 comments: true
 ---
+
+The interview was originally published as [The Future of Religion & Skepticism with Richard Dawkins](https://centerforinquiry.org/blog/the-future-of-religion-skepticism-with-richard-dawkins/), and is reproduced below.
+
 At [CSICon 2019](https://csiconference.org/), I had the pleasure of interviewing [Richard Dawkins](https://en.wikipedia.org/wiki/Richard_Dawkins) about the future of religion and skepticism. There is probably no better person to ask, as he has been at the forefront of both. [The God Delusion](https://en.wikipedia.org/wiki/The_God_Delusion) marked a turning point when atheism entered the mainstream, and the merging of his foundation with the [Center for Inquiry](https://centerforinquiry.org/) created the largest secular organization promoting science. I spoke with him about religion and pseudoscience, as well as what explains their persistence in the 21st century and what we can do about it. A transcript of the conversation, edited for clarity, follows.
 
 **A.D.**	When you were writing the book *The Selfish Gene*, did you anticipate the widespread adoption of the concept of memetics outside of the scientific community? Should we consider religion, conspiracy theories and pseudoscience as somewhat successful memes, which could explain their persistence?
