@@ -5,7 +5,7 @@ permalink: /
 subtitle:
 profile:
   align: right
-  image: prof.jpeg
+  image: square.jpeg
   address:
 
 news: false  # includes a list of news items
