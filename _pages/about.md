@@ -13,7 +13,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a machine learning engineer at Google, working on [Gemini](https://gemini.google.com) finetuning and inference for teams across [Alphabet](https://abc.xyz). I've been fortunate to work on a wide range of problems, ranging from multimodal capabilities augmentation, to both generative and non-generative tasks like text embedding, to automating model hyperparameters and sharding to improve training and inference efficiency. 
+I'm a machine learning engineer at Google, working on [Gemini](https://gemini.google.com) finetuning and inference for teams across [Alphabet](https://abc.xyz), including a Nobel prize winner! I've been fortunate to work on a wide range of problems, ranging from multimodal capabilities augmentation, to both generative and non-generative tasks like text embedding, to automating model hyperparameters and sharding to improve training and inference efficiency.
 
 In my free time I like to read [mostly non-fiction](https://www.goodreads.com/review/list/9349542-alek?ref=nav_mybooks&shelf=read), and on rare occassions interview people about their work. You can watch [my interview with Scott Aaronson](https://www.youtube.com/watch?v=EK2zEyFyYXM) on LLM watermarking, or read [my interview with Richard Dawkins](https://centerforinquiry.org/blog/the-future-of-religion-skepticism-with-richard-dawkins/) on the future of religion & skepticism.
 
