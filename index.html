@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alek Dimitriev</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB4PSI1MCIgeT0iNTUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iNjgiIGZpbGw9IiMwMDAiPkFEPC90ZXh0Pjwvc3ZnPg==">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -590,24 +592,30 @@
         .contact-links {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 3rem;
         }
 
         .contact-link {
             color: var(--text-muted);
             text-decoration: none;
-            font-size: 0.85rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            padding: 1rem 2rem;
-            border: 1px solid var(--text-dim);
-            transition: all 0.3s ease;
+            font-size: 5rem;
+            transition: color 0.3s ease;
         }
 
         .contact-link:hover {
-            color: var(--text-primary);
-            border-color: var(--accent-gold);
-            background: rgba(201, 169, 98, 0.05);
+            color: var(--accent-gold);
+        }
+
+        .contact-icon-img {
+            height: 5rem;
+            width: auto;
+            filter: brightness(0) invert(60%);
+            transition: filter 0.3s ease;
+        }
+
+        .contact-link:hover .contact-icon-img {
+            filter: brightness(0) saturate(100%) invert(67%) sepia(50%) saturate(500%) hue-rotate(5deg);
         }
 
         /* Footer */
@@ -873,11 +881,13 @@
 
     <section class="contact" id="contact">
         <div class="contact-container">
-            <h2 class="contact-title">Let's Connect</h2>
+            <!-- <h2 class="contact-title">Let's Connect</h2> -->
             <div class="contact-links">
-                <a href="https://github.com/alekdimi" class="contact-link" target="_blank">GitHub</a>
-                <a href="https://www.goodreads.com/review/list/9349542-alek" class="contact-link" target="_blank">Goodreads</a>
-                <a href="https://scholar.google.com/citations?user=alekdimi" class="contact-link" target="_blank">Scholar</a>
+                <a href="https://scholar.google.com/citations?user=xgmZn70AAAAJ" class="contact-link" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                <a href="https://github.com/alekdimi" class="contact-link" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.goodreads.com/review/list/9349542-alek" class="contact-link" target="_blank" title="Goodreads"><i class="fab fa-goodreads"></i></a>
+                <a href="https://x.com/tensor_rotator" class="contact-link" target="_blank" title="X/Twitter"><i class="fab fa-x-twitter"></i></a>
+                <!-- <a href="https://alekdimi.substack.com" class="contact-link" target="_blank" title="Substack"><img src="assets/img/substack.png" alt="Substack" class="contact-icon-img"></a> -->
             </div>
         </div>
     </section>
