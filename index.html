@@ -567,6 +567,75 @@
             height: 16px;
         }
 
+        /* Library Section */
+        .library {
+            padding: 6rem 4rem;
+            min-height: auto;
+        }
+
+        .library-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .library-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .library-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+
+        .library-grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 6rem;
+            justify-content: center;
+        }
+
+        .library-column h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--accent-book-cloth);
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .library-list {
+            list-style: none;
+        }
+
+        .library-list li {
+            margin-bottom: 0.75rem;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .library-list a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .library-list a:hover {
+            color: var(--text-primary);
+        }
+
+        @media (max-width: 900px) {
+            .library-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
         /* Contact Section */
         .contact {
             padding: 3rem 4rem;
@@ -713,6 +782,7 @@
             <a href="#research">Research</a>
             <a href="#experience">Experience</a>
             <a href="#conversations">Conversations</a>
+            <a href="#library">Library</a>
         </div>
     </nav>
 
@@ -877,6 +947,53 @@
                 </div>
             </article>
         </div>
+    </section>
+
+    <section class="library" id="library">
+        <div class="library-container">
+            <div class="library-header">
+                <p class="section-label">Stuff I like</p>
+                <h2 class="library-title">Library</h2>
+            </div>
+            <div class="library-grid">
+                <div class="library-column">
+                    <h3>Podcasts</h3>
+                    <ul class="library-list">
+                        <li><a href="https://www.dwarkeshpatel.com/podcast" target="_blank">Dwarkesh Podcast</a></li>
+                        <li><a href="https://www.samharris.org/podcasts" target="_blank">Making Sense with Sam Harris</a></li>
+                        <li><a href="https://www.sciencefictions.org/" target="_blank">Science Fictions</a></li>
+                        <li><a href="https://www.dancarlin.com/hardcore-history-series/" target="_blank">Hardcore History</a></li>
+                        <li><a href="https://www.mercatus.org/marginal-revolution-podcast" target="_blank">Marginal Revolution</a></li>
+                        <li><a href="https://open.spotify.com/show/3JlvdUfyVkBoe9K1hiXWyI" target="_blank">The Last Invention</a></li>
+                        <li><a href="http://rationallyspeakingpodcast.org" target="_blank">Rationally Speaking</a></li>
+                    </ul>
+                </div>
+                <div class="library-column">
+                    <h3>Blogs</h3>
+                    <ul class="library-list">
+                        <li><a href="https://www.astralcodexten.com" target="_blank">Scott Alexander</a></li>
+                        <li><a href="https://karpathy.bearblog.dev/blog/" target="_blank">Karpathy</a></li>
+                        <li><a href="https://www.tobyord.com/writings" target="_blank">Toby Ord</a></li>
+                        <li><a href="https://sander.ai/posts/" target="_blank">Sander Dieleman</a></li>
+                        <li><a href="https://www.applieddivinitystudies.com/archives" target="_blank">Applied Divinity Studies</a></li>
+                        <li><a href="https://thinkingmachines.ai/blog/" target="_blank">Thinking Machines' Connectionism</a></li>
+                    </ul>
+                </div>
+                <div class="library-column">
+                    <h3>Articles</h3>
+                    <ul class="library-list">
+                        <li><a href="https://situational-awareness.ai/" target="_blank">Situational Awareness</a></li>
+                        <li><a href="https://darioamodei.com/machines-of-loving-grace" target="_blank">Machines of Loving Grace</a></li>
+                        <li><a href="https://zhengdongwang.com/2023/06/27/why-transformative-ai-is-really-really-hard-to-achieve.html" target="_blank">Why transformative AI is really, really hard to achieve</a></li>
+                        <li><a href="https://www.astralcodexten.com/p/your-book-review-reentry" target="_blank">Psmith's Review of Reentry by Berger</a></li><li><a href="https://scholars-stage.org/the-silicon-valley-canon-on-the-paideia-of-the-american-tech-elite/" target="_blank">The Silicon Valley Canon</a></li>
+                        <li><a href="https://hmmdaily.com/2018/10/18/your-real-biological-clock-is-youre-going-to-die/" target="_blank">Your Real Biological Clock Is You're Going to Die</a></li>
+                        <li><a href="https://www.smbc-comics.com/comic/2012-09-02" target="_blank">SMBC: One day you will be dead</a></li>
+                        <li><a href="https://www.terrain.com/option-rot" target="_blank">Option Rot</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
     <section class="contact" id="contact">
@@ -1157,6 +1274,32 @@
                 y: 0,
                 duration: 0.8,
                 delay: i * 0.15,
+                ease: 'power3.out'
+            });
+        });
+
+        // Library section
+        gsap.to('.library-header', {
+            scrollTrigger: {
+                trigger: '.library',
+                start: 'top 70%',
+            },
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: 'power3.out'
+        });
+
+        gsap.utils.toArray('.library-list li').forEach((item, i) => {
+            gsap.to(item, {
+                scrollTrigger: {
+                    trigger: '.library',
+                    start: 'top 60%',
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.5,
+                delay: i * 0.05,
                 ease: 'power3.out'
             });
         });
