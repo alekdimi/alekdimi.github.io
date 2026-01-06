@@ -727,6 +727,14 @@
             transform: rotate(45deg);
         }
 
+        /* Hide custom cursor on touch devices */
+        @media (pointer: coarse) {
+            .cursor,
+            .cursor-dot {
+                display: none;
+            }
+        }
+
         /* Responsive */
         @media (max-width: 900px) {
             nav {
